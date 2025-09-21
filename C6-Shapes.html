@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box
+        }
+       
+    .square {
+        width: 150px;
+        height: 150px;
+        background-color: blue;
+       margin: auto;
+    }
+    .rec{
+        padding: 50px;
+
+    }
+    .rect{
+        width: 290px;
+        height: 150px;
+        background-color: aquamarine;
+        margin: auto;
+    }
+    .circle{
+        width: 150px;
+        height: 150px;
+        background-color: red;
+        margin: auto;
+        border-radius: 100px;
+    }
+    body{
+         background: linear-gradient(270deg, rgb(251, 118, 118),rgb(236, 157, 19), rgb(242, 31, 112));
+    background-size: 600% 600%;
+    animation: gradientAnimation 12s ease infinite;
+    }
+    @keyframes gradientAnimation{
+        0%{background-position: 0% 50%;}
+        50%{background-position: 100% 50%;}
+        100%{background-position: 0% 50%;}
+
+    }
+    .triangle-up{
+  width:0;
+  height:0;
+  border: 70px solid transparent;
+  border-bottom-color: purple;
+  margin: auto;
+  position: relative;
+  bottom: 55px;
+}
+.diamond {
+  width: 150px;
+  height: 150px;
+  background: teal;
+  transform: rotate(45deg);
+  margin: auto;
+} 
+    
+    </style>
+</head>
+<body>
+    
+    <div class="square"></div>
+    <div class="rec">
+     <div class="rect"></div>
+     </div>
+     <div class="cir">
+     <div class="circle"></div>
+     </div>
+     <div class="triangle-up"></div>
+     <div class="diamond"></div>
+    
+</body>
+</html>
