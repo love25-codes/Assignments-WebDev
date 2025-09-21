@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+                background-color: rgba(255, 182, 193, 0.788);
+                   
+            }
+        .container{
+            margin: auto;
+            height: 1200px;
+            width: 1200px;
+            /* border: x solid black; */
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            padding: 20px;
+            /* background-color: aquamarine; */
+            background: linear-gradient(180deg, rgba(255, 0, 0, 0.644), pink , rgba(128, 0, 128, 0.717));
+           
+
+        }
+        .box{
+            border: 3px solid black;
+            margin: 9px;
+            border-radius: 9px;
+            /* box-shadow: -1px -1px 12px 5px grey; */
+        }
+        .box:hover{
+            transform:scale(1.05);
+            transition: transform 0.2s ease;
+            cursor:pointer;
+      }
+      .box1:hover , .box8:hover{
+        box-shadow: 2px 2px 12px 7px rgb(255, 0, 0);
+
+      }
+      .box2:hover,.box9:hover{
+         box-shadow: 2px 1px 12px 7px rgb(27, 255, 99)
+
+      }
+      .box3:hover , .box7:hover{
+        box-shadow: 2px 1px 12px 7px purple;
+      }
+      .box4:hover{
+        box-shadow: 2px 1px 12px 7px blue;
+      }
+      .box5:hover{
+        box-shadow: 2px 1px 12px 7px orange;
+      }
+      .box6:hover{
+        box-shadow: 2px 1px 12px 7px rgb(22, 182, 236);
+      }
+        .box1 , .box6{
+           background-image: url(https://wallpaperaccess.com/full/327871.jpg);
+           background-size: 380px 380px;
+           background-repeat: no-repeat; 
+        }
+        .box2 , .box7{
+            background-image: url(https://www.bing.com/th/id/OIP.SPwDmj7siBHlEngxpeadlwHaFn?w=234&h=211&c=8&rs=1&qlt=90&o=6&dpr=1.1&pid=3.1&rm=2);
+            background-repeat: no-repeat;
+             background-size: 380px 380px;
+        }
+        .box3 {
+            background-image: url(https://th.bing.com/th/id/OIP.C8r9K8bt4f2TN9kETs0aoQHaE8?w=294&h=196&c=7&r=0&o=5&dpr=1.1&pid=1.7);
+            background-repeat: no-repeat;
+            background-size: 380px 380px;
+        }
+        .box4{
+             background-image: url(https://th.bing.com/th/id/OIP.TVtRL26TDI3UurFZoFMT4QHaFH?w=270&h=186&c=7&r=0&o=5&dpr=1.1&pid=1.7);
+             background-repeat: no-repeat;
+             background-size: 380px 380px;
+        }
+        .box5{
+            background-image: url(https://th.bing.com/th/id/OIP.ziOa8PwsKupCrkKoh7E-RAHaFj?w=212&h=180&c=7&r=0&o=5&dpr=1.1&pid=1.7);
+            background-repeat: no-repeat;
+            background-size: 380px 380px;
+        }
+        .box9{
+            background-image: url(https://th.bing.com/th/id/OIP.G1fS4qKzfgOtSpM-17XqDAHaFj?w=261&h=196&c=7&r=0&o=5&dpr=1.1&pid=1.7);
+            background-repeat: no-repeat;
+            background-size: 380px 380px;
+        }
+        .box8{
+            background-image: url(https://th.bing.com/th/id/OIP.steefZbb3jlWdqZDsN0_LAHaE9?w=281&h=187&c=7&r=0&o=7&dpr=1.1&pid=1.7&rm=3);
+         background-size: 450px 380px;
+      background-repeat: no-repeat;
+        }
+        .gallery{
+            
+            height: 100px;
+            margin-bottom: 12px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 60px;
+            font-family: fantasy;
+                }
+    </style>
+</head>
+<body> 
+    <div class="gallery">-- Dog Gallery --</div>
+    <div class="container">
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+        <div class="box box4"></div>
+        <div class="box box5"></div>
+        <div class="box box6"></div>
+        <div class="box box7"></div>
+        <div class="box box8"></div>
+        <div class="box box9"></div>
+    </div>
+</body>
+</html>
