@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+   .earth{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: relative;
+    /* top: 0; */
+    top: 190px;
+    margin: 100px auto;
+    background-color: rgb(7, 92, 7);
+   }
+   .moon_orbit{
+    height: 100px;
+    width: 100px;
+    position: absolute;
+  /* top: 0;
+  left: 0; */
+
+    animation: rotatemoon 10s linear infinite;
+  
+
+   }
+   .moon{
+    height: 40px;
+    width: 40px;
+    margin: 240px;
+    background-color: grey;
+    border-radius: 50%;
+    position: absolute;
+    top:0;
+    left: 50%;
+    box-shadow: 0 0 12px white;
+    transform: translateX(-50%);
+    border: 2px solid black;
+    box-shadow: 0 0 17px 6px gray;
+   }
+   @keyframes rotatemoon{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+   }
+</style>
+<body>
+    <div class="cont">
+    <div class="earth">
+        <div class="moon_orbit">
+            <div class="moon">
+
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+</html>
